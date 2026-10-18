@@ -8,3 +8,152 @@
 @media(max-width:1050px){.category-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.site-header{gap:15px}.brand{min-width:170px}.brand strong{font-size:24px}.main-nav{gap:19px}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.three-column{grid-template-columns:1fr 1fr}.guides-panel{grid-column:1/-1}.footer-main{grid-template-columns:1fr 1fr}.hero-note{display:none}}
 @media(max-width:700px){.announcement{font-size:10px;flex-wrap:wrap}.toplinks{display:none}.site-header{padding:15px 5%;display:grid;grid-template-columns:1fr auto}.brand{min-width:0}.search{grid-column:1/-1;grid-row:2;max-width:none;width:100%}.header-links{font-size:11px}.main-nav{padding:0 5%;gap:18px}.main-nav a{font-size:11px}.hero{padding:28px 5%;grid-template-columns:1fr;gap:22px}.hero-overlay{background:linear-gradient(90deg,rgba(246,250,244,.95),rgba(246,250,244,.77))}.hero h1{font-size:35px}.hero-copy>p{font-size:14px}.finder-card{justify-self:stretch;max-width:none}.section{padding:25px 5%}.section-heading{align-items:start;flex-direction:column}.category-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.category-card img{height:95px}.finder-strip{margin:0 5%;padding:20px;align-items:start;flex-direction:column}.product-toolbar{align-items:start;flex-direction:column}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.product-art{height:125px}.product-info{padding:11px}.product-info h3{font-size:13px}.product-info p{font-size:10px}.three-column{grid-template-columns:1fr}.guides-panel{grid-column:auto}.newsletter{margin:0 5% 22px;padding:20px}.newsletter form{min-width:100%}.footer-main{padding:28px 5%;grid-template-columns:1fr 1fr;gap:24px}.footer-brand{grid-column:1/-1}.footer-bottom{padding:14px 5%;flex-direction:column}}
 @media(max-width:390px){.product-grid{grid-template-columns:1fr}.category-label strong{font-size:11px}.hero-points{gap:10px}.brand strong{font-size:22px}}
+
+/* ===== WellLife Premium Visual Fix ===== */
+
+/* Hero section with a large wellness photo */
+.hero {
+  min-height: 430px;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.7fr);
+  align-items: center;
+  gap: 30px;
+  background: #e5efe4;
+}
+
+.hero-photo {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image: url("https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=2000&q=85");
+  background-size: cover;
+  background-position: center 43%;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    rgba(245, 250, 243, 0.96) 0%,
+    rgba(245, 250, 243, 0.90) 36%,
+    rgba(245, 250, 243, 0.48) 61%,
+    rgba(17, 60, 37, 0.16) 100%
+  );
+}
+
+.hero-copy,
+.finder-card,
+.hero-note {
+  position: relative;
+  z-index: 1;
+}
+
+/* Consistent category cards */
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  min-height: 0;
+}
+
+.category-card img {
+  display: block;
+  width: 100%;
+  height: 125px;
+  flex: 0 0 125px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.category-card > span {
+  flex: 1;
+  min-height: 75px;
+}
+
+/* Product images */
+.product-art {
+  height: 165px;
+  overflow: hidden;
+  background: #edf4ee;
+}
+
+.product-art img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Comparison section image */
+.panel-image {
+  height: 145px;
+  overflow: hidden;
+}
+
+.panel-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Guide thumbnails */
+.guide-item img {
+  width: 58px;
+  height: 52px;
+  flex: 0 0 58px;
+  object-fit: cover;
+}
+
+/* Responsive layout */
+@media (max-width: 1050px) {
+  .category-card img {
+    height: 115px;
+    flex-basis: 115px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: 0;
+    padding-top: 34px;
+    padding-bottom: 30px;
+  }
+
+  .hero-photo {
+    background-position: 58% center;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(245, 250, 243, 0.96),
+      rgba(245, 250, 243, 0.78)
+    );
+  }
+
+  .category-card img {
+    height: 100px;
+    flex-basis: 100px;
+  }
+
+  .category-card > span {
+    min-height: 70px;
+  }
+
+  .product-art {
+    height: 135px;
+  }
+
+  .panel-image {
+    height: 130px;
+  }
+}
