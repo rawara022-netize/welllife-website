@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore wellness guides, compare health and wellness products, and discover helpful tools with WellLife.">
+  <title>WellLife — Your Health, Our Priority</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">
+    <span>✦ Helpful Wellness Guides</span><span>•</span><span>Transparent Product Recommendations</span><span>•</span><span>Free Wellness Tools</span>
+    <div class="announcement-right"><a href="#about">About Us</a><a href="#guides">Guides</a><a href="#disclosure">Affiliate Disclosure</a></div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="WellLife home">
+      <span class="brand-mark">❧</span>
+      <span><strong>Well<span>Life</span></strong><small>Your Health, Our Priority</small></span>
+    </a>
+    <form class="search" id="searchForm" role="search">
+      <input id="searchInput" type="search" placeholder="Search products, guides, topics..." aria-label="Search products and guides">
+      <button type="submit">Search</button>
+    </form>
+    <div class="header-links"><a href="#products">♡ Wishlist</a><a href="#tools">Tools</a></div>
+  </header>
+
+  <nav class="main-nav" aria-label="Main navigation">
+    <a class="active" href="#">Home</a>
+    <a href="#categories">Weight Management</a><a href="#categories">Fitness</a><a href="#categories">Sleep & Wellness</a>
+    <a href="#categories">Meditation</a><a href="#categories">Beauty & Skincare</a><a href="#categories">Nutrition</a>
+    <a href="#categories">Supplements</a><a href="#tools">Tools</a><a href="#guides">Guides</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">HEALTHY HABITS • BETTER TOMORROW</span>
+        <h1>Your Complete<br><span>Health & Wellness</span> Guide</h1>
+        <p>Explore helpful guides, compare wellness products, and find tools that support more informed choices for your wellbeing.</p>
+        <div class="hero-points"><span>✓ Helpful information</span><span>✓ Product comparisons</span><span>✓ Useful tools</span></div>
+        <a class="button" href="#categories">Explore Categories <span>→</span></a>
+      </div>
+      <aside class="finder-card">
+        <span class="mini-label">PERSONALIZED WELLNESS FINDER</span>
+        <h2>What would you like help with?</h2>
+        <p>Choose a goal to explore related guides and products.</p>
+        <div class="goal-list">
+          <button data-goal="Weight Management">◉ Weight management</button>
+          <button data-goal="Exercise & Fitness">↗ Exercise & fitness</button>
+          <button data-goal="Sleep and Dreams">☾ Better sleep</button>
+          <button data-goal="Meditation">◎ Stress & meditation</button>
+          <button data-goal="Beauty">✧ Beauty & skincare</button>
+        </div>
+        <p class="fine-print">This finder provides general information, not medical advice.</p>
+      </aside>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="section-heading"><div><h2>Explore Health & Wellness Categories</h2><p>Start with the topic that matters to you.</p></div><a href="#all-categories">View all categories →</a></div>
+      <div class="category-grid" id="categoryGrid">
+        <button class="category-card" data-category="Diets & Weight Loss"><span class="category-emoji">⚖️</span><strong>Weight Management</strong><small>Guides and product options</small></button>
+        <button class="category-card" data-category="Exercise & Fitness"><span class="category-emoji">🏋️</span><strong>Exercise & Fitness</strong><small>Movement and strength</small></button>
+        <button class="category-card" data-category="Sleep and Dreams"><span class="category-emoji">🌙</span><strong>Sleep & Wellness</strong><small>Build healthier routines</small></button>
+        <button class="category-card" data-category="Meditation"><span class="category-emoji">🧘</span><strong>Meditation & Stress</strong><small>Mindfulness resources</small></button>
+        <button class="category-card" data-category="Beauty"><span class="category-emoji">✨</span><strong>Beauty & Skincare</strong><small>Explore skincare topics</small></button>
+        <button class="category-card" data-category="Nutrition"><span class="category-emoji">🥗</span><strong>Nutrition</strong><small>Food and healthy habits</small></button>
+        <button class="category-card" data-category="Dietary Supplements"><span class="category-emoji">🌿</span><strong>Supplements</strong><small>Understand product labels</small></button>
+        <button class="category-card" data-category="Yoga"><span class="category-emoji">🌞</span><strong>Yoga & Healthy Living</strong><small>Everyday wellbeing</small></button>
+      </div>
+    </section>
+
+    <section class="finder-strip">
+      <div><span class="mini-label">A MORE HELPFUL WAY TO EXPLORE</span><h2>Find information for your wellness goals</h2><p>Choose a topic, read the guide, and compare relevant options at your own pace.</p></div>
+      <a class="button button-light" href="#tools">Explore free tools →</a>
+    </section>
+
+    <section class="section" id="products">
+      <div class="section-heading"><div><h2>Featured Wellness Products</h2><p>Product examples are placeholders until you add verified ClickBank offers.</p></div><a href="#all-products">Browse products →</a></div>
+      <div class="product-toolbar">
+        <div class="filter-pills" id="filterPills">
+          <button class="pill active" data-filter="All">All products</button>
+          <button class="pill" data-filter="Diets & Weight Loss">Weight management</button>
+          <button class="pill" data-filter="Exercise & Fitness">Fitness</button>
+          <button class="pill" data-filter="Sleep and Dreams">Sleep</button>
+          <button class="pill" data-filter="Beauty">Beauty</button>
+          <button class="pill" data-filter="Dietary Supplements">Supplements</button>
+        </div>
+        <label class="sort-label">Sort <select id="sortSelect"><option value="featured">Featured</option><option value="name">Name A–Z</option></select></label>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-category="Diets & Weight Loss" data-name="Wellness Goal Guide">
+          <div class="product-art art-green"><span>EDITOR'S PICK</span><div class="bottle">W</div></div><div class="product-info"><small class="product-category">Weight management</small><h3>Wellness Goal Guide</h3><p>Example listing — replace with a verified offer.</p><a class="button product-button affiliate-link" href="#disclosure" data-product="Wellness Goal Guide">View offer ↗</a></div>
+        </article>
+        <article class="product-card" data-category="Exercise & Fitness" data-name="Active Living Plan">
+          <div class="product-art art-blue"><span>FITNESS</span><div class="bottle">A</div></div><div class="product-info"><small class="product-category">Exercise & fitness</small><h3>Active Living Plan</h3><p>Example listing — replace with a verified offer.</p><a class="button product-button affiliate-link" href="#disclosure" data-product="Active Living Plan">View offer ↗</a></div>
+        </article>
+        <article class="product-card" data-category="Sleep and Dreams" data-name="Sleep Routine Guide">
+          <div class="product-art art-purple"><span>SLEEP</span><div class="bottle">Z</div></div><div class="product-info"><small class="product-category">Sleep & wellness</small><h3>Sleep Routine Guide</h3><p>Example listing — replace with a verified offer.</p><a class="button product-button affiliate-link" href="#disclosure" data-product="Sleep Routine Guide">View offer ↗</a></div>
+        </article>
+        <article class="product-card" data-category="Beauty" data-name="Skin Care Essentials">
+          <div class="product-art art-peach"><span>SKINCARE</span><div class="bottle">S</div></div><div class="product-info"><small class="product-category">Beauty & skincare</small><h3>Skin Care Essentials</h3><p>Example listing — replace with a verified offer.</p><a class="button product-button affiliate-link" href="#disclosure" data-product="Skin Care Essentials">View offer ↗</a></div>
+        </article>
+      </div>
+      <p class="notice">Important: these are sample cards, not endorsements or verified ClickBank products. Add actual offer details and your own affiliate tracking links before publishing.</p>
+    </section>
+
+    <section class="three-column section" id="tools">
+      <article class="info-panel compare-panel"><span class="panel-icon">⇄</span><h2>Compare options thoughtfully</h2><p>Review features, pricing, ingredients where relevant, limitations, and seller terms before deciding.</p><a href="#products" class="text-link">Explore product cards →</a></article>
+      <article class="info-panel tools-panel"><span class="mini-label">FREE RESOURCES</span><h2>Wellness tools</h2><a href="#tools" class="tool-row"><span>⚖️</span><span><strong>BMI information</strong><small>Understand what BMI can and cannot tell you.</small></span></a><a href="#tools" class="tool-row"><span>🌙</span><span><strong>Sleep habit checklist</strong><small>Reflect on your routine.</small></span></a><a href="#tools" class="tool-row"><span>🧘</span><span><strong>Stress check-in</strong><small>A simple mindfulness prompt.</small></span></a></article>
+      <article class="info-panel guides-panel" id="guides"><span class="mini-label">LEARN & EXPLORE</span><h2>Latest guides</h2><div class="guide-item"><span class="guide-thumb">🥗</span><div><strong>How to evaluate wellness claims</strong><small>Learn what to check before trusting a claim.</small></div></div><div class="guide-item"><span class="guide-thumb">🌙</span><div><strong>Building a consistent sleep routine</strong><small>Practical habits and reliable resources.</small></div></div><div class="guide-item"><span class="guide-thumb">🛍️</span><div><strong>How to compare online products</strong><small>Look beyond a product's headline claims.</small></div></div></article>
+    </section>
+
+    <section class="newsletter">
+      <div><h2>Get helpful guides in your inbox</h2><p>Optional email updates with useful articles and product education.</p></div>
+      <form id="newsletterForm"><input type="email" placeholder="Email address (demo only)" aria-label="Email address"><button type="submit">Join updates</button></form>
+      <p id="newsletterMessage" class="form-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer id="disclosure">
+    <div class="footer-main">
+      <div class="footer-brand"><a class="brand brand-footer" href="#"><span class="brand-mark">❧</span><span><strong>Well<span>Life</span></strong><small>Your Health, Our Priority</small></span></a><p>Helpful wellness information for more informed choices.</p></div>
+      <div><h3>Explore</h3><a href="#categories">Categories</a><a href="#products">Products</a><a href="#guides">Guides</a><a href="#tools">Tools</a></div>
+      <div><h3>About</h3><a href="#about">About WellLife</a><a href="#disclosure">Affiliate disclosure</a><a href="#disclosure">Privacy policy (to be added)</a></div>
+      <div><h3>Transparency</h3><p class="disclosure-text">Some links may be affiliate links. If you purchase through them, we may earn a commission at no extra cost to you. This does not guarantee a product's effectiveness or make it right for everyone.</p></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> WellLife. Design starter.</span><span>General information only — not medical advice.</span></div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
