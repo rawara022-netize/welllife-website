@@ -157,3 +157,77 @@
     height: 130px;
   }
 }
+
+/* WellLife final hero and layout correction */
+
+.hero-note {
+  position: absolute !important;
+  right: 35%;
+  bottom: 26px;
+  left: auto;
+  top: auto;
+  width: max-content;
+  height: auto;
+  min-height: 0;
+  display: block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.88);
+  color: #176b3a;
+  font-size: 14px;
+  line-height: 1.5;
+  box-shadow: 0 8px 24px rgba(23, 72, 43, 0.09);
+  transform: rotate(-4deg);
+  z-index: 2;
+}
+
+.hero {
+  min-height: 430px;
+}
+
+.hero-photo {
+  background-size: cover;
+  background-position: center center;
+}
+
+.category-card {
+  overflow: hidden;
+  min-width: 0;
+}
+
+.category-card img {
+  width: 100%;
+  height: 125px;
+  flex: 0 0 125px;
+  object-fit: cover;
+}
+
+.product-art {
+  height: 165px;
+  overflow: hidden;
+}
+
+.product-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 700px) {
+  .hero-note {
+    display: none;
+  }
+
+  .hero {
+    min-height: 0;
+  }
+
+  .category-card img {
+    height: 100px;
+    flex-basis: 100px;
+  }
+
+  .product-art {
+    height: 135px;
+  }
+}
